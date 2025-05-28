@@ -1,10 +1,17 @@
 {
   "name": "todo-app-backend",
-  "type": "commonjs",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "format": "npx prettier --write . --ignore-path .gitignore",
+    "lint": "eslint .",
+    "test": "npm run format && npm run lint --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "npm run test"
   },
   "keywords": [],
   "author": "",
@@ -12,17 +19,23 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-    "eslint": "^9.27.0",
     "express": "^5.1.0",
     "typeorm": "^0.3.24"
   },
   "devDependencies": {
+    "@eslint/js": "^9.27.0",
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
     "@types/node": "^22.15.21",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^10.1.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
     "nodemon": "^3.1.10",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.2.2"
   }
 }
