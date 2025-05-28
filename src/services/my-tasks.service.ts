@@ -1,4 +1,4 @@
-import { ITask } from '../models/my-task.model';
+import { ITask } from '../models/my-task.model.ts';
 
 const todos: ITask[] = [
   {
