@@ -1,11 +1,11 @@
-import { ITask } from "../models/my-task.model";
+import { ITask } from '../models/my-task.model';
 
 const todos: ITask[] = [
   {
-    status: "to-do",
-    text: "Some text 123123",
-    time: "09:00 PM",
-    title: "My Title Server",
+    status: 'to-do',
+    text: 'Some text 123123',
+    time: '09:00 PM',
+    title: 'My Title Server',
   },
 ];
 

@@ -1,4 +1,4 @@
-import { StatusTypes } from "./common.model";
+import { StatusTypes } from './common.model';
 
 export interface ITask {
   title: string;
