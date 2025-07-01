@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: 12345
       POSTGRES_DB: todo-db
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - pgdata:/var/lib/postgresql/data
 
@@ -20,7 +20,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: adminpassword
     ports:
-      - "8080:80"
+      - '8080:80'
     depends_on:
       - postgres
 
@@ -31,7 +31,7 @@ services:
     container_name: node-app
     restart: always
     ports:
-      - "3000:3000"
+      - '3000:3000'
     depends_on:
       - postgres
     environment:
