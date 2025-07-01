@@ -20,6 +20,7 @@ export default [
         window: 'readonly',
         document: 'readonly',
         process: 'readonly',
+        parseInt: 'readonly',
       },
     },
     plugins: {

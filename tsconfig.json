@@ -4,12 +4,15 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false
   },
   "include": ["src/**/*.ts", "src/routes/index.ts"],
   "exclude": ["node_modules", "dist"]
